@@ -4,8 +4,8 @@ a {
 
 /* BURGERMENU */
 .hidden {
-  /* display: none;  */
-  /*transform:scale(0);*/
+  display: none;
+  transform: scale(0);
   transform: translateX(-100%);
   opacity: 0;
 }

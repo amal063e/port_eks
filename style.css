@@ -1,3 +1,25 @@
+/* Generelt for alle sider */
+* {
+  box-sizing: border-box;
+}
+/* Regler for alle billeder generelt */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Placering af footer og header rigtigt på alle sider */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+}
+/* Generelt for alle sider */
+
 a {
   color: black;
 }
@@ -109,5 +131,52 @@ a:hover {
   a:hover {
     background-color: #b2c5da;
     color: white;
+  }
+}
+
+#navigation,
+#footer {
+  font-family: Courier New;
+  font-size: 1.02em;
+  border: 1px solid black;
+  padding: 1vw;
+  text-align: center;
+}
+.nav_right {
+  display: grid;
+  margin-top: 2vw;
+}
+
+.nav_left a {
+  font-weight: bold;
+}
+
+#navigation a,
+#footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#navigation a:hover,
+#footer a:hover {
+  text-decoration-line: underline;
+  color: #c85955;
+}
+
+@media (min-width: 960px) {
+  /*Header og footer*/
+  #navigation,
+  #footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav_right {
+    display: flex;
+    gap: 3vw;
+    margin-top: 0;
+  }
+  .nav_left a {
+    font-weight: normal;
   }
 }

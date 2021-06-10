@@ -35,3 +35,79 @@ a {
 
   /*BURGERMENU SLUT*/
 }
+
+#section_one {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+#section_one > * {
+  grid-area: 1 / 1;
+}
+
+.box {
+  display: grid;
+  place-items: center;
+  background: #efbd787c;
+  box-shadow: 0px 0px 10px black;
+  max-width: 500px;
+  width: 90%;
+  z-index: 10;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.box a {
+  text-decoration: none;
+  color: black;
+}
+
+.box h2 {
+  justify-content: center;
+  width: 100%;
+  background-color: #f5e08e;
+  box-shadow: 0px 0px 10px #243241;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0%;
+}
+
+.box h2:hover,
+a:hover {
+  background-color: #b2c5da;
+  color: white;
+}
+
+.logo {
+  padding: 0%;
+  width: 40%;
+}
+
+@media screen and (min-width: 960px) {
+  .box {
+    display: grid;
+    place-items: center;
+    background: #efbd787c;
+    box-shadow: 0px 0px 10px black;
+  }
+
+  .box a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .box h2 {
+    max-width: 500px;
+    background-color: #f5e08e;
+    box-shadow: 0px 0px 10px #243241;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 auto;
+  }
+  .box h2:hover,
+  a:hover {
+    background-color: #b2c5da;
+    color: white;
+  }
+}

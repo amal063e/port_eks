@@ -1,10 +1,3 @@
-/* Generelt for alle sider */
-* {
-  box-sizing: border-box;
-  background-color: white;
-}
-/* Generelt for alle sider SLUT */
-
 /* Regler for alle billeder generelt */
 img {
   width: 100%;
@@ -13,11 +6,11 @@ img {
 }
 
 header .logo {
-  font-size: 24px;
+  font-size: 33px;
   color: black;
-  font-family: "courier new", serif;
-  display: block;
+  font-family: "nothing you could do", serif;
   margin: 1px;
+  text-decoration: none;
 }
 
 header nav ul {
@@ -33,11 +26,20 @@ header nav ul li a {
   color: black;
   font-size: 22px;
   margin: 83px;
+  text-decoration: none;
 }
 
-/* Regler for alle billeder generelt SLUT */
+.menustreg {
+  border-bottom: 3px solid pink;
+}
+.menustreg_p {
+  border-bottom: 3px solid pink;
+}
+.menustreg_cv {
+  border-bottom: 3px solid pink;
+}
 
-/* Placering af footer og header rigtigt på alle sider */
+/* Placering og farve af footer rigtigt på alle sider */
 html {
   height: 100%;
 }
@@ -47,11 +49,11 @@ body {
   grid-template-rows: auto 1fr auto;
   margin: 0;
 }
-/* Placering af footer og header rigtigt på alle sider SLUT */
 
 a {
   color: black;
 }
+/* Placering og farve af footer rigtigt på alle sider SLUT */
 
 /* BURGERMENU */
 .hidden {
@@ -94,7 +96,6 @@ a {
   place-items: center;
   height: 100%;
   background-image: url(images/forside.jpeg);
-  display: grid;
   grid-column: 1/4;
   width: 100%;
   height: 100vh;
@@ -105,84 +106,36 @@ a {
   place-content: center;
 }
 
-#section_one > * {
-  grid-area: 1 / 1;
-}
-
-.box {
+#section_two {
   display: grid;
   place-items: center;
-  box-shadow: 0px 0px 10px black;
-  max-width: 500px;
-  width: 90%;
-  z-index: 10;
-  gap: 1rem;
-  padding: 2rem;
-}
-
-.box a {
-  text-decoration: none;
-  color: black;
-}
-
-.box h2 {
-  justify-content: center;
+  height: 100%;
+  background-image: url(images/mig.jpeg);
+  grid-column: 1/4;
   width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: 90% 30%;
+  margin-bottom: 6px;
+  margin-top: 11px;
+  place-content: center;
+}
+
+h2 {
+  font-family: "crimson text";
+  font-size: 2rem;
   text-align: center;
-  font-size: 2.5rem;
-  margin: 0%;
 }
-
-.box h2:hover,
-a:hover {
-  background-color: #b2c5da;
-  color: white;
-}
-
-.logo {
-  padding: 0%;
-  width: 19%;
-}
-
-.box {
-  display: grid;
-  place-items: center;
-  background: #cec2be;
-  box-shadow: 0px 0px 10px black;
-}
-
-.box a {
-  text-decoration: none;
-  color: black;
-}
-
-.box h2 {
-  max-width: 500px;
+p {
+  font-family: Courier New;
+  font-size: 1rem;
   text-align: center;
-  font-family: crimson text;
-  font-size: 2.5rem;
-  margin: 0 auto;
-}
-
-.box h2:hover,
-a:hover {
-  background-color: #b2c5da;
-  color: white;
-}
-
-@media screen and (min-width: 960px) {
-  .box {
-    display: grid;
-    place-items: center;
-    background: #cec2be;
-    box-shadow: 0px 0px 10px black;
-  }
 }
 
 /* Dekoration til footer */
 #navigation,
 #footer {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.02em;
   border: 1px solid black;
   padding: 1vw;
@@ -192,7 +145,6 @@ a:hover {
 /* når man holder sin mus henover adresse, nr osv */
 #navigation a:hover,
 #footer a:hover {
-  text-decoration-line: underline;
   color: #c85955;
 }
 

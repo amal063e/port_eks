@@ -21,10 +21,11 @@ header .logo {
 
 header nav ul {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
+  display: grid;
   margin: 0 auto;
   width: fit-content;
+  text-align: center;
+  border-bottom: 1px solid #333333;
 }
 
 header nav ul li a {
@@ -51,7 +52,7 @@ a {
   color: black;
 }
 
-/* BURGERMENU */
+/* BURGERMENU
 .hidden {
   display: none;
   transform: scale(0);
@@ -69,7 +70,7 @@ a {
   transform-origin: top left;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   #menuknap {
     display: none;
   }
@@ -79,14 +80,12 @@ a {
   }
 
   #menu li {
-    display: inline;
+    display: inline-block;
   }
 
   /*BURGERMENU SLUT*/
-}
 
-/* Layout på sider */
-
+/* Layout på forside */
 #section_one {
   display: grid;
   place-items: center;

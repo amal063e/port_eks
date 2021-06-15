@@ -130,8 +130,9 @@ a {
 /* CV SIDE SLUT */
 
 h2 {
-  font-family: "courier new";
-  font-size: 2rem;
+  font-family: "Crimson text";
+  font-size: 25px;
+  text-decoration: underline;
 }
 p {
   font-family: "crimson text";
@@ -218,10 +219,10 @@ p {
 }
 
 .overskrift {
-  font-family: "nothing you could do";
-  font-size: 30px;
+  font-family: "crimson text";
+  font-size: 36px;
   /* font-weight: 600; */
-  color: gray;
+  color: black;
   text-align: center;
   padding-bottom: 20px;
   padding-top: 52px;

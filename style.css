@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+img {
+  width: 100%;
+}
 
 html {
   scroll-behavior: smooth;
@@ -10,7 +13,7 @@ html {
 header .logo {
   font-size: 33px;
   color: black;
-  font-family: "nothing you could do", serif;
+  font-family: "Nothing you could do", serif;
   margin: 1px;
   text-decoration: none;
 }
@@ -127,15 +130,15 @@ a {
 /* CV SIDE SLUT */
 
 h2 {
-  font-family: "crimson text";
+  font-family: "courier new";
   font-size: 2rem;
-  text-align: center;
 }
 p {
-  font-family: Courier New;
+  font-family: "crimson text";
   font-size: 1rem;
-  text-align: center;
-  max-width: 60ch;
+  max-width: 110ch;
+  text-align: justify;
+  line-height: 30px;
 }
 
 /* Dekoration til footer */
@@ -155,11 +158,6 @@ p {
 }
 
 /* TEMAER */
-
-img {
-  width: 100%;
-  height: auto;
-}
 @media screen and (min-width: 600px) {
   .image_temaer {
     display: grid;
@@ -213,34 +211,38 @@ img {
 }
 
 /* PORTFOLIO TEMA 2 */
+
+#section_wrapper {
+  display: grid;
+  margin-bottom: 40px;
+}
+
 .overskrift {
-  font-family: "Nothing you could do", serif;
-  font-size: 28px;
-  font-weight: 600;
-  color: darkgray;
-  text-transform: uppercase;
+  font-family: "nothing you could do";
+  font-size: 30px;
+  /* font-weight: 600; */
+  color: gray;
   text-align: center;
   padding-bottom: 20px;
-  padding-top: 180px;
+  padding-top: 52px;
 }
-.opgave-layout {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+
+.opgave_foto {
+  max-width: 100%;
+  height: auto;
 }
-.opgave-foto img {
-  width: 100%;
-  flex-grow: 1;
-  flex-basis: 500px;
-}
-.opgave-txt {
+.opgave_txt {
   padding-top: 50px;
   padding-left: 20px;
   padding-right: 30px;
   flex-grow: 1;
   flex-basis: 500px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "crimson text", sans-serif;
   line-height: 24px;
   font-weight: 600;
+}
+
+.opgave_p {
+  place-content: center;
+  margin: auto;
 }

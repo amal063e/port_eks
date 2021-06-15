@@ -133,6 +133,7 @@ h2 {
   font-family: "Crimson text";
   font-size: 25px;
   text-decoration: underline;
+  text-align: center;
 }
 p {
   font-family: "crimson text";
@@ -156,6 +157,16 @@ p {
 #navigation a:hover,
 #footer a:hover {
   color: #c85955;
+}
+
+/* Denne mediaquery gør at min footer ligger på langs og derefter cropper under hinanden når den går til mobil-version */
+@media (min-width: 960px) {
+  /*Header og footer*/
+  #navigation,
+  #footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* TEMAER */
@@ -201,16 +212,6 @@ p {
   }
 }
 
-/* Denne mediaquery gør at min footer ligger på langs og derefter cropper under hinanden når den går til mobil-version */
-@media (min-width: 960px) {
-  /*Header og footer*/
-  #navigation,
-  #footer {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 /* PORTFOLIO TEMA 2 */
 
 #section_wrapper {
@@ -246,4 +247,9 @@ p {
 .opgave_p {
   place-content: center;
   margin: auto;
+}
+
+/* når man holder sin mus henover link til projekt */
+#section_wrapper a:hover {
+  color: #b78931;
 }

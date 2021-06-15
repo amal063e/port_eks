@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 img {
-  width: 100%;
+  max-width: 100%;
+  background-size: cover;
 }
 
 html {
@@ -176,7 +177,7 @@ p {
     gap: 37px;
     margin-right: 30px;
     margin-top: 75px;
-    margin-left: 60px;
+    margin-left: 101px;
     margin-right: 60px;
     margin-bottom: 32px;
   }
